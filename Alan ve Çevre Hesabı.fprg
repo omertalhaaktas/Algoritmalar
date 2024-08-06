@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="omer_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 09:18:37 &#214;S"/>
+        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDY7MDg6NDk6Mjggw5ZTOzMwMzY="/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDY7MDk6MTg6Mzcgw5ZTOzE7MzE0MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi1, sayi2" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi2"/>
+            <output expression="&quot;&#199;evre:&quot; &amp;(sayi1+sayi2)*2" newline="True"/>
+            <output expression="&quot;Alan:&quot; &amp;sayi1*sayi2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
