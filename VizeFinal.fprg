@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="omer_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-06 09:45:48 &#214;S"/>
+        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDY7MDk6MzE6Mjcgw5ZTOzMwMjc="/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDY7MDk6NDU6NDggw5ZTOzE7MzE0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="vize1, vize2, vizetop, final, ort" type="Real" array="False" size=""/>
+            <output expression="&quot;Birinci vizenizi giriniz&quot;" newline="True"/>
+            <input variable="vize1"/>
+            <output expression="&quot;&#304;kinci vizenizi giriniz&quot;" newline="True"/>
+            <input variable="vize2"/>
+            <output expression="&quot;Final notunuzu giriniz&quot;" newline="True"/>
+            <input variable="final"/>
+            <assign variable="vizetop" expression="(vize1+vize2)/2"/>
+            <assign variable="ort" expression="vizetop*0.3 + final*0.7"/>
+            <assign variable="ort" expression="vizetop+final"/>
+            <if expression="ort&lt;50">
+                <then>
+                    <output expression="&quot;Dersten kald&#305;n&#305;z&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Dersten ge&#231;tiniz&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
