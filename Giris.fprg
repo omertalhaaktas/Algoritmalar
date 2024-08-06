@@ -4,12 +4,20 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="omer_"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-08-05 07:57:31 &#214;S"/>
-        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDU7MDc6NTI6MDYgw5ZTOzMwMjQ="/>
-        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDU7MDc6NTc6MzEgw5ZTOzE7MzEzNQ=="/>
+        <attribute name="saved" value="2024-08-06 08:21:19 &#214;S"/>
+        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDY7MDc6NTg6MDAgw5ZTOzMwMjU="/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDY7MDg6MjE6MTkgw5ZTOzE7MzEzNA=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
-        <body/>
+        <body>
+            <declare name="sayi1, sayi2, toplam" type="Integer" array="False" size=""/>
+            <output expression="&quot;Birinci say&#305;y&#305; giriniz&quot;" newline="True"/>
+            <input variable="sayi1"/>
+            <output expression="&quot;&#304;kinci say&#305;y&#305; giriniz&quot;" newline="False"/>
+            <input variable="sayi2"/>
+            <assign variable="toplam" expression="sayi1+sayi2"/>
+            <output expression="&quot;Toplam:&quot; &amp;toplam" newline="True"/>
+        </body>
     </function>
 </flowgorithm>
