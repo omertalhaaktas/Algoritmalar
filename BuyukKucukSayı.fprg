@@ -4,9 +4,9 @@
         <attribute name="name" value=""/>
         <attribute name="authors" value="omer_"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-08-07 11:52:48 &#214;&#214;"/>
+        <attribute name="saved" value="2024-08-07 12:49:13 &#214;S"/>
         <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTE6NDM6NDEgw5bDljszMTUx"/>
-        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTE6NTI6NDggw5bDljsxOzMyNjY="/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTI6NDk6MTMgw5ZTOzI7MzEzNQ=="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -31,7 +31,7 @@
                 </if>
             </for>
             <output expression="&quot;Kucuk say&#305;:&quot; &amp;kucuk" newline="True"/>
-            <output expression="&quot;Buyuk say&#305;&quot; &amp;buyuk" newline="True"/>
+            <output expression="&quot;Buyuk say&#305;:&quot; &amp;buyuk" newline="True"/>
         </body>
     </function>
 </flowgorithm>

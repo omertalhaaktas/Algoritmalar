@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="omer_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 01:00:53 &#214;S"/>
+        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTI6NDk6MTYgw5ZTOzMwMjk="/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MDE6MDA6NTMgw5ZTOzE7MzEyMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fibonacci" type="Integer" array="True" size="20"/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <assign variable="fibonacci[0]" expression="1"/>
+            <assign variable="fibonacci[1]" expression="1"/>
+            <output expression="fibonacci[0]" newline="True"/>
+            <output expression="fibonacci[1]" newline="True"/>
+            <for variable="index" start="2" end="19" direction="inc" step="1">
+                <assign variable="fibonacci[index]" expression="fibonacci[index-2] + fibonacci[index-1]"/>
+                <output expression="fibonacci[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
