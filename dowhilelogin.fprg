@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="omer_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 09:10:45 &#214;&#214;"/>
+        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MDg6Mzk6MzUgw5bDljszMTY1"/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MDk6MTA6NDUgw5bDljsxOzMyNjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <declare name="kulad, sifre" type="String" array="False" size=""/>
+            <do expression="sayac&lt;5">
+                <output expression="&quot;Kullan&#305;c&#305; ad&#305;n&#305;z&#305; giriniz&quot;" newline="True"/>
+                <input variable="kulad"/>
+                <output expression="&quot;&#350;ifrenizi giriniz&quot;" newline="True"/>
+                <input variable="sifre"/>
+                <assign variable="sayac" expression="0"/>
+                <if expression="kulad==&quot;admin&quot;">
+                    <then>
+                        <if expression="sifre==&quot;12345&quot;">
+                            <then>
+                                <assign variable="sayac" expression="10"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;&#350;ifreyi yanl&#305;&#351; girdiniz&quot;" newline="True"/>
+                            </else>
+                        </if>
+                    </then>
+                    <else>
+                        <output expression="&quot;Kullan&#305;c&#305; ad&#305;n&#305; yanl&#305;&#351; girdiniz&quot;" newline="True"/>
+                    </else>
+                </if>
+                <assign variable="sayac" expression="sayac+1"/>
+            </do>
+        </body>
+    </function>
+</flowgorithm>
