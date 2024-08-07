@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="omer_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 11:42:58 &#214;&#214;"/>
+        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTA6MzI6NDQgw5bDljszMTUx"/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTE6NDI6NTggw5bDljsxOzMyNjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayilar" type="Integer" array="True" size="50"/>
+            <declare name="index, tekAdet, ciftAdet, tekToplam, ciftToplam" type="Integer" array="False" size=""/>
+            <assign variable="ciftAdet" expression="0"/>
+            <assign variable="tekAdet" expression="0"/>
+            <assign variable="ciftToplam" expression="0"/>
+            <assign variable="tekToplam" expression="0"/>
+            <for variable="index" start="0" end="49" direction="inc" step="1">
+                <assign variable="sayilar[index]" expression="Random(100)+1"/>
+                <if expression="sayilar[index]%2==0">
+                    <then>
+                        <assign variable="ciftAdet" expression="ciftAdet+1"/>
+                        <assign variable="ciftToplam" expression="sayilar[index]+ciftToplam"/>
+                    </then>
+                    <else>
+                        <assign variable="tekAdet" expression="tekAdet+1"/>
+                        <assign variable="tekToplam" expression="sayilar[index]+tekToplam"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="&quot;&#199;ift Adet:&quot; &amp;ciftAdet" newline="True"/>
+            <output expression="&quot;Tek Adet:&quot; &amp;tekAdet" newline="True"/>
+            <output expression="&quot;&#199;ift Toplam:&quot; &amp;ciftToplam" newline="True"/>
+            <output expression="&quot;Tek Toplam:&quot; &amp;tekToplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
