@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="omer_"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 11:52:48 &#214;&#214;"/>
+        <attribute name="created" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTE6NDM6NDEgw5bDljszMTUx"/>
+        <attribute name="edited" value="b21lcl87REVTS1RPUC1WQVUxM0FVOzIwMjQtMDgtMDc7MTE6NTI6NDggw5bDljsxOzMyNjY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayilar" type="Integer" array="True" size="10"/>
+            <declare name="index, kucuk, buyuk" type="Integer" array="False" size=""/>
+            <assign variable="kucuk" expression="100"/>
+            <assign variable="buyuk" expression="0"/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <assign variable="sayilar[index]" expression="Random(100)+1"/>
+                <if expression="sayilar[index]&lt;kucuk">
+                    <then>
+                        <assign variable="kucuk" expression="sayilar[index]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="sayilar[index]&gt;buyuk">
+                    <then>
+                        <assign variable="buyuk" expression="sayilar[index]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Kucuk say&#305;:&quot; &amp;kucuk" newline="True"/>
+            <output expression="&quot;Buyuk say&#305;&quot; &amp;buyuk" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
